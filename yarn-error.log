@@ -1,0 +1,50 @@
+Arguments: 
+  /home/cyberhackb/.nvm/versions/node/v18.17.0/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/cyberhackb/.nvm/versions/node/v18.17.0/bin:/home/cyberhackb/.local/share/solana/install/active_release/bin:/home/cyberhackb/.cargo/bin:/home/cyberhackb/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/cyberhackb/.foundry/bin:/home/cyberhackb/.local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: Client network socket disconnected before secure TLS connection was established
+      at connResetException (node:internal/errors:720:14)
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1605:19)
+      at TLSSocket.emit (node:events:526:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "spl-node",
+    "version": "1.0.0",
+    "description": "Contains SPL token code",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "spl-token",
+      "solana"
+    ],
+    "author": "gyanlakshmi@gmail.com",
+    "license": "ISC",
+    "dependencies": {
+      "@solana/spl-token": "^0.2.0",
+      "@solana/web3.js": "^1.47.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
